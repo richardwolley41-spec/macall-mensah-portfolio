@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4AF37;
+  --color-gold-light: #F3E5AB;
+  --color-gold-warm: #E2C077;
+  
+  --color-navy-dark: #050711;
+  --color-navy: #090D1E;
+  --color-navy-card: #0D132A;
+  --color-navy-light: #161D3A;
+
+  --color-purple-accent: #A855F7;
+  --color-purple-light: #C084FC;
+  --color-purple-glow: rgba(168, 85, 247, 0.18);
+  
+  --color-offwhite: #F8FAFC;
+  --color-muted: #94A3B8;
+
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-heading: 'Syne', sans-serif;
+  --font-display: 'Syne', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    transition: background-color 0.35s ease, color 0.35s ease;
+  }
+
+  html.dark {
+    background-color: #050711;
+    color: #F8FAFC;
+  }
+
+  html.light {
+    background-color: #F8F9FD;
+    color: #090D1E;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    transition: background-color 0.35s ease, color 0.35s ease;
+  }
+
+  html.dark body {
+    background-color: #050711;
+    color: #F8FAFC;
+  }
+
+  html.light body {
+    background-color: #F8F9FD;
+    color: #090D1E;
+  }
+
+  ::selection {
+    background-color: rgba(168, 85, 247, 0.35);
+    color: #FFFFFF;
+  }
+}
+
+/* Custom Atmospheric Effects */
+.bg-radial-purple {
+  background: radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.15) 0%, rgba(99, 102, 241, 0.05) 45%, transparent 70%);
+}
+
+html.light .bg-radial-purple {
+  background: radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.10) 0%, rgba(99, 102, 241, 0.04) 45%, transparent 70%);
+}
+
+.text-stroke-subtle {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.22);
+}
+
+html.light .text-stroke-subtle {
+  -webkit-text-stroke: 1px rgba(9, 13, 30, 0.15);
+}
+
+.text-stroke-purple {
+  -webkit-text-stroke: 1px rgba(168, 85, 247, 0.35);
+}
