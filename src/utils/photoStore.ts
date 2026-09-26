@@ -4,7 +4,7 @@ export const INITIAL_PLACEHOLDERS = {
   aboutPortrait: '/photos/macall-portrait.jpg',
   mcSuitMic: '/photos/macall-on-stage.jpg',
   ghanaianPodium: '/photos/macall-at-podium.jpg',
-  radioStudio: '',
+  radioStudio: '/photos/macall-radio-studio.jpg',
 };
 export function usePhotoStore() {
   return { photos: INITIAL_PLACEHOLDERS };

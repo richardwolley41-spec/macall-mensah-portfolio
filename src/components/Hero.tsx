@@ -279,10 +279,10 @@ export default function Hero({ portraitSrc, onOpenPhotoManager }: HeroProps) {
                 </div>
                 <div>
                   <div className={`text-xs font-display font-bold ${isLight ? 'text-slate-900' : 'text-white'}`}>
-                    500+ High-Profile Events
+                    Professional Event Hosting
                   </div>
                   <div className={`text-[11px] font-sans ${isLight ? 'text-slate-500' : 'text-slate-400'}`}>
-                    State protocol, luxury weddings & galas
+                    Events, celebrations & live audiences
                   </div>
                 </div>
               </div>
@@ -299,10 +299,10 @@ export default function Hero({ portraitSrc, onOpenPhotoManager }: HeroProps) {
                 </div>
                 <div>
                   <div className={`text-xs font-display font-bold ${isLight ? 'text-slate-900' : 'text-white'}`}>
-                    12+ Years Broadcast Radio
+                    Radio & Broadcasting
                   </div>
                   <div className={`text-[11px] font-sans ${isLight ? 'text-slate-500' : 'text-slate-400'}`}>
-                    Western Region’s celebrated media personality
+                    Conversations that connect with listeners
                   </div>
                 </div>
               </div>

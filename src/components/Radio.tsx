@@ -13,9 +13,9 @@ export default function Radio({ studioSrc }: { studioSrc: string }) {
         <p className={`text-lg leading-relaxed mb-8 ${light ? 'text-slate-600' : 'text-slate-300'}`}>Macall brings his voice and personality to radio and live conversations. Ask about broadcasting, interviews and media appearances.</p>
         <a className="inline-flex rounded-full px-8 py-4 bg-purple-600 hover:bg-purple-500 text-white font-bold uppercase tracking-widest text-xs" target="_blank" rel="noopener noreferrer" href={`https://wa.me/233208022554?text=${encodeURIComponent('Hello Macall, I would like to enquire about a radio or media engagement.')}`}>Enquire on WhatsApp</a>
       </motion.div>
-      <div className={`min-h-[300px] rounded-3xl overflow-hidden flex items-center justify-center border ${light ? 'bg-slate-50 border-slate-200' : 'bg-[#101327] border-white/10'}`}>
-        <div className="p-12 text-center"><p className="text-purple-400 tracking-[0.3em] text-xs uppercase mb-3">On the air</p><p className="font-display text-xl">Broadcast clips and studio moments coming soon</p></div>
-      </div>
+      <figure className={`rounded-3xl overflow-hidden border ${light ? 'border-slate-200' : 'border-white/10'}`}>
+        <img src={studioSrc} alt="Macall Mensah wearing headphones beside a studio microphone" loading="lazy" className="block w-full h-auto" />
+      </figure>
     </div>
   </section>;
 }
